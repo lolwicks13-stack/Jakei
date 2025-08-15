@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Jakei's Website</title>
   <style>
     body {
@@ -14,18 +14,18 @@
     }
     h1 {
       color: #333;
-      font-size: 8vw; /* scales with screen */
+      font-size: clamp(20px, 4vw, 36px);
     }
     p {
       color: #555;
-      font-size: 5vw; /* scales with screen */
+      font-size: clamp(14px, 2vw, 20px);
     }
     button {
       background: #4CAF50;
       color: white;
       border: none;
       padding: 10px 20px;
-      font-size: 5vw; /* scales with screen */
+      font-size: clamp(14px, 2vw, 20px);
       cursor: pointer;
       border-radius: 5px;
     }
@@ -37,7 +37,7 @@
 <body>
 
 <h1>Welcome to Jakei's Website</h1>
-<p>This website works on laptops, tablets, and phones!</p>
+<p>This site should now display correctly on Messenger, phone browsers, and laptops.</p>
 <button onclick="alert('Hello from Jakei!')">Click Me</button>
 
 </body>
